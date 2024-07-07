@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css"><!--linking the css file-->
+</head>
+
+<body>
+    <div class="login">
+        <span id="heading">Log in to your Account</span>
+        <input type="text" id="user" required placeholder="Username or Email-id">
+        <input type="password" id="pwd" required placeholder="Password">
+        <div>
+        <input type="checkbox"  onclick=toggle()><label>Show Password</label>
+        <input type="checkbox"  onclick=save()  ><label>Remember me</label></div>
+        <button onclick=login()><b>Log in</b></button>
+        <div class="loader"></div>
+        <span id="error"></span>
+        <span id="status"></span>
+    </div>
+    <script src="Login.js"></script><!--linking the js file-->
+</body>
+
+</html>
